@@ -1,15 +1,11 @@
 from rest_framework import serializers
 
-<<<<<<< HEAD
 from profiles_api import models
 
-=======
->>>>>>> b4ff86bade7bde95aaab8c6bf892548e748d93a8
 
 class HelloSerializer(serializers.Serializer):
     """Serializer a name field for testing our APIView"""
     name = serializers.CharField(max_length=10)
-<<<<<<< HEAD
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -40,5 +36,3 @@ class UserProfileSerializer(serializers.ModelSerializer):
             password = validated_data.pop('password')
             instance.set_password(password)
         return super().update(instance, validated_data)
-=======
->>>>>>> b4ff86bade7bde95aaab8c6bf892548e748d93a8
